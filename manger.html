@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vigor gym</title>
+    <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="home.html#main"><img src="logo_new.png" alt="company logo"></a>
+    </div>
+    <div class="navs">
+        <div class="navigation">
+            <a href="#post_blog">POST BLOG</a>
+            <a href="#edit_membership">EDIT MEMBERSHIP</a>
+            <a href="#edit_classes">EDIT CLASSES</a>
+            <a href="#members">VIEW MEMBERS</a>
+
+
+        </div>
+        <div class="nav-container">
+   <button class="open-btn" onclick="openNav()">☰</button>
+    <nav id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+            <a href="#post_blog">POST BLOG</a>
+            <a href="#edit_membership">EDIT MEMBERSHIP</a>
+            <a href="#edit_classes">EDIT CLASSES</a>
+            <a href="#members">VIEW MEMBERS</a>
+        </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="section" id="post_blog">
+        <h1>post blog</h1>
+        <div class="container">
+            <form>
+                <div class="input">
+                <input type="text" name="blog-title" id="blog-title" required>
+                    <label for="blog-title">title</label>
+                </div>
+                <div class="input">
+                    <textarea name="article" id="article" cols="30" rows="10" required></textarea>
+                    <label for="article">article</label>
+                </div>
+                <div class="short">
+                <div class="input">
+                <input type="file" name="audio" id="audio" value="choose audio">
+                    <label for="audio">audio</label>
+                </div>
+                <div class="input">
+                <input type="file" name="blog-image" id="blog-image" accept="image/" required>
+                    <label for="blog-image">image</label>
+                </div>
+                <input type="submit" id="submit" value="post">
+                    </div>
+            </form>
+        </div>
+
+    </div>
+
+
+</main>
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+</script>
+</body>
+</html>
